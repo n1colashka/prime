@@ -1067,6 +1067,7 @@ form .form-control:focus {
   bottom: 160px;
   top: auto;
   position: absolute;
+  margin-left: 30%;
 }
 
 .seventh {

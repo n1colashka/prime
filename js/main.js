@@ -5,7 +5,7 @@ var modal2 = document.getElementById("popup__form");
 
 
 var popupContent = document.getElementById("popup__nav");
-var popupContent = document.getElementById("popup__footer");
+var popupFooter = document.getElementById("popup__footer");
 
 // Get the button that opens the modal
 var btn = document.getElementById("popup-link");
@@ -29,9 +29,9 @@ btnFooter.onclick = function(e) {
     console.log('click');
     modal.style.opacity = "1";
     modal.style.visibility = "visible";
-    popupContent.style.opacity = "1";
-    popupContent.style.display = "block";
-    popupContent.style.transition = "all 0.8s ease 0s";
+    popupFooter.style.opacity = "1";
+    popupFooter.style.display = "block";
+    popupFooter.style.transition = "all 0.8s ease 0s";
     modal2.style.display = "none";
 }
 
