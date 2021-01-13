@@ -635,6 +635,11 @@ form .form-control:focus{
 	position: relative;
 }
 
+.popup {
+	position: fixed;
+	overflow: auto;
+}
+
 .fourth__form {
 	background-color: #16213e;
 	color: #fff;

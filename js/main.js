@@ -13,7 +13,7 @@ var btnFooter = document.getElementById("popup__footer-link");
 var btn2 = document.getElementById("popup-link2");
 var btn3 = document.getElementById("popup-link3");
 var btn4 = document.getElementById("popup-link4");
-var btn4 = document.getElementById("popup-link5");
+var btn5 = document.getElementById("popup-link5");
 
 
 btn.onclick = function() {
