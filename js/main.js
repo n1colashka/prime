@@ -64,3 +64,90 @@ window.onclick = function(event) {
     modal.style.visibility = "hidden";
     }
 }
+
+var burger = document.querySelector('.checkbox-toggle');
+var html = document.querySelector('html');
+
+burger.addEventListener('click', function() {
+    html.classList.toggle('overflow-hidden');
+})
+
+// Превращаем блоки в слайдеры на мобильных
+if (window.innerWidth <= 993) {
+    initServicesSlider();
+    initThirdSlider();
+}
+
+
+preventDefaultLinks(); // Убрать если в Third будут рабочие ссылки, при клике на Подробнее
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function initServicesSlider() {
+    var slider = document.querySelector('.services');
+    var sliderWrapper = slider.querySelector('.row');
+    var sliderItems = slider.querySelectorAll('.services__item');
+
+    slider.classList.add('swiper-container');
+    sliderWrapper.classList.add('swiper-wrapper');
+    sliderWrapper.classList.remove('row');
+    sliderItems.forEach(item => {
+        item.classList.add('swiper-slide');
+    })
+
+    var swiper = new Swiper('.services', {
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'fraction',
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+}
+
+function initThirdSlider() {
+    var slider = document.querySelector('.third__container');
+    var sliderWrapper = slider.querySelector('.row');
+    var sliderItems = slider.querySelectorAll('.third__slider-item');
+
+    slider.classList.add('swiper-container');
+    sliderWrapper.classList.add('swiper-wrapper');
+    sliderWrapper.classList.remove('row');
+    sliderItems.forEach(item => {
+        item.classList.add('swiper-slide');
+    })
+
+    var swiper = new Swiper('.third__container', {
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'fraction',
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+}
+
+
+function preventDefaultLinks() {
+    var thirdLinks = document.querySelectorAll('.third__mobile-btn');
+    thirdLinks.forEach(item => {
+        item.addEventListener('click', function(e) {
+            e.preventDefault();
+        })
+    })
+}

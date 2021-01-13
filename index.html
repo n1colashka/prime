@@ -16,7 +16,14 @@
     <section class="first">
         <div class="container">
             <div class="row" style="position: relative; z-index: 31;">
-                <div class="col-lg-12">
+                <div class="col-lg-12 mobile-header">
+                    <div class="empty"></div>
+                    <div class="mobile-contacts">
+                        <div class="nav__contacts">
+                            <a href="tel:+38(067)6176504">+38 (067) 617 65 04</a>
+                            <h6>пн - пт: с 9:00 до 19:00</h5>
+                        </div>
+                    </div>
                     <div id="menu" class="menu">
                         <div class="menu__logo">
                             <a href="index.html"><img src="img/logo.png" alt=""></a>
@@ -30,7 +37,7 @@
                             
                             <li><a href="#">О нас</a></li>
                             <div class="nav__contacts">
-                                <h5>+38 (067) 617 65 04</h5>
+                                <a href="tel:+38(067)6176504">+38 (067) 617 65 04</a>
                                 <h6>пн - пт: с 9:00 до 19:00</h5>
                             </div>
                             <button id="popup-link2" class="nav__btn"><a href="#">Заказать звонок</a></button>
@@ -46,10 +53,10 @@
                                 <div>
                                     <div>
                                         <ul>
-                                        <li><a href="index.html">About</a></li>
-                                        <li><a href="#">Products</a></li>
-                                        <li><a href="#">Blog</a></li>
-                                        <li><a href="#">Contact</a></li>
+                                        <li><a href="#">СТО</a></li>
+                                        <li class="menu-mobile__sublist"><a href="#">Услуги</a></li>
+                                        <li><a href="#">Наши работы</a></li>
+                                        <li><a href="#">О нас</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -71,13 +78,17 @@
 
 
             <div class="row" style="margin-top: 60px;">
-                <div class="col-lg-6">
+                <div class="col-lg-6 recover__box">
                     <div class="recover">
                         <h1>Полный спектр услуг по доп. оборудованию</h1>
                         <p>Забудьте про ремонт “у дяди Васи” на гаражах за городом, </br>
                             Вы тратите свое время и деньги! Пришло время доверить
                             свое авто лучшим специалистам!</p>
                         <button class="recover__btn" ><a href="#">Подробнее</a></button>
+                        <div class="recover__video" data-bs-toggle="modal" data-bs-target="#exampleModal" style=" cursor: pointer;">
+                            <div class="blob"><img  class="btn " src="img/arrow.png" alt=""></div>
+                            <div class="recover__video-title">Посмотреть видео</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -255,8 +266,8 @@
             <div class="row"></div>
                 <div class="col-lg-12">
                     <div class="second__services services">
-                        <div class="services__left">
-                            <div class="services__item">
+                        <div class="row">
+                            <div class="services__item col-6">
                                 <div class="services__content">
                                     <h1>Защита от угона</h1>
                                     <ul>
@@ -269,43 +280,7 @@
                                 <div class="services__picture"><img src="img/1.png" alt=""></div>
                             </div>
 
-                            <div class="services__item">
-                                <div class="services__content">
-                                    <h1>Парковочные системы</h1>
-                                    <ul>
-                                        <li><a href="">Установка парктроников</a></li>
-                                        <li><a href="">Камеры заднего и камеры</br> переднего вида</a></li>
-                                        <li><a href="">Системы кругового обзора</a></li>
-                                        
-                                    </ul>
-                                </div>
-                                <div class="services__picture"><img src="img/2.png" alt=""></div>
-                            </div>
-
-                            <div class="services__item">
-                                <div class="services__content">
-                                    <h1>Шумоизоляция авто</h1>
-                                    <p>Шумоизоляции автомобиля</br> подвергаются следующие части</br>кузова по отдельности или в</br> комплексе: днище,потолок,двери,</br>Колесные арки,торпеда,задняя ляда,</br>капот,багажник,крышка багажника</p>
-                                </div>
-                                <div class="services__picture"><img src="img/3.png" alt=""></div>
-                            </div>
-
-                            <div class="services__item">
-                                <div class="services__content">
-                                    <h1>Оклейка авто пленкой</h1>
-                                    <ul>
-                                        <li><a href="">Антигравийная пленка</a></li>
-                                        <li><a href="">Цветная пленка</a></li>
-                                        <li><a href="">Брэндирование авто</a></li>
-                                
-                                    </ul>
-                                </div>
-                                <div class="services__picture"><img src="img/4.png" alt=""></div>
-                            </div>
-
-                        </div>
-                        <div class="services__right ">
-                            <div class="services__item">
+                            <div class="services__item col-6">
                                 <div class="services__content">
                                     <h1>Автомобильный свет</h1>
                                     <ul>
@@ -319,7 +294,20 @@
                                 <div class="services__picture"><img src="img/5.png" alt=""></div>
                             </div>
 
-                            <div class="services__item">
+                            <div class="services__item col-6">
+                                <div class="services__content">
+                                    <h1>Парковочные системы</h1>
+                                    <ul>
+                                        <li><a href="">Установка парктроников</a></li>
+                                        <li><a href="">Камеры заднего и камеры</br> переднего вида</a></li>
+                                        <li><a href="">Системы кругового обзора</a></li>
+                                        
+                                    </ul>
+                                </div>
+                                <div class="services__picture"><img src="img/2.png" alt=""></div>
+                            </div>
+
+                            <div class="services__item col-6">
                                 <div class="services__content">
                                     <h1>Мультимедия и акустика</h1>
                                     <ul>
@@ -332,8 +320,16 @@
                                 </div>
                                 <div class="services__picture"><img src="img/6.png" alt=""></div>
                             </div>
+                            
+                            <div class="services__item col-6">
+                                <div class="services__content">
+                                    <h1>Шумоизоляция авто</h1>
+                                    <p>Шумоизоляции автомобиля  подвергаются следующие части кузова по отдельности или в  комплексе: днище,потолок,двери, Колесные арки,торпеда,задняя ляда, капот,багажник,крышка багажника</p>
+                                </div>
+                                <div class="services__picture"><img src="img/3.png" alt=""></div>
+                            </div>
 
-                            <div class="services__item">
+                            <div class="services__item col-6">
                                 <div class="services__content">
                                     <h1>Услуги автомаляра</h1>
                                     <ul>
@@ -346,7 +342,20 @@
                                 <div class="services__picture"><img src="img/7.png" alt=""></div>
                             </div>
 
-                            <div class="services__item">
+                            <div class="services__item col-6">
+                                <div class="services__content">
+                                    <h1>Оклейка авто пленкой</h1>
+                                    <ul>
+                                        <li><a href="">Антигравийная пленка</a></li>
+                                        <li><a href="">Цветная пленка</a></li>
+                                        <li><a href="">Брэндирование авто</a></li>
+                                
+                                    </ul>
+                                </div>
+                                <div class="services__picture"><img src="img/4.png" alt=""></div>
+                            </div>
+
+                            <div class="services__item col-6">
                                 <div class="services__content">
                                     <h1>Отделка карбоном</h1>
                                     <ul>
@@ -359,6 +368,11 @@
                                 <div class="services__picture"><img src="img/8.png" alt=""></div>
                             </div>
                         </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination services__pagination"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next services__next"></div>
+                        <div class="swiper-button-prev services__prev"></div> 
                     </div>
                 </div>
             </div>
@@ -369,29 +383,35 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="third__title"><h1>Почему <span>PRIME Autotechnic</span> - это</br>
-                        лучшее, что есть на рынке по</br>
-                        доп. оборудованию?</h1></div>
+                    <div class="third__title"><h1>Почему <span>PRIME Autotechnic</span> - это
+                        лучшее, что есть на рынке по&nbsp;доп. оборудованию?</h1></div>
                 </div>
                 <div class="col-lg-6"><div class="third__extitle"><p>Просто посмотрите на уникальные особенности наших
                     услуг и решите для себя, стоит ли сэкономить 200 грн.
                     разово, или приобрести хорошее обслуживание навсегда!   </p></div></div>
             </div>
-
-            <div class="row forPadding">
-                <div style="position: relative;" class="col-lg-3 col-md-6"><div class="third__item_3 third__item_1Bg"><h1>Автомобиль защищен</br>
-                    от некомпетентных</br>
-                    сотрудников</h1><p>Сроки выполнения работ рассчитаны так, чтобы Вы получили готовый автомобиль максимально быстро и при этом качество работы не пострадало. <br> Все нормы отработаны на практике и показали отменные результаты.</p></div></div>
-                <div style="position: relative;" class="col-lg-3 col-md-6"><div class="third__item_3 third__item_2Bg"><h1>Пожизненная гарантия</br>
-                    на работы центра</br>
-                    по установке</h1><p>Сроки выполнения работ рассчитаны так, чтобы Вы получили готовый автомобиль максимально быстро и при этом качество работы не пострадало.  <br> Все нормы отработаны на практике и показали отменные результаты.</p></div></div>
-                <div style="position: relative;" class="col-lg-3 col-md-6"><div class="third__item_3 third__item_3Bg"><h1>Работаем надежно,</br>
-                    отвечаем за качество</br>
-                    не срываем сроки</h1><p>Сроки выполнения работ рассчитаны так, чтобы Вы получили готовый автомобиль максимально быстро и при этом качество работы не пострадало.  <br> Все нормы отработаны на практике и показали отменные результаты.</p></div></div>
-                <div style="position: relative;" class="col-lg-3 col-md-6"><div class="third__item_3 third__item_4Bg"><h1>Качественный и</br>
-                    индивидуальный подход</br>
-                    к вашему автомобилю</h1><p>Сроки выполнения работ рассчитаны так, чтобы Вы получили готовый автомобиль максимально быстро и при этом качество работы не пострадало. <br>  Все нормы отработаны на практике и показали отменные результаты.</p></div></div>
+            <div class="third__container">
+                <div class="row forPadding">
+                    <div style="position: relative;" class="third__slider-item col-lg-3 col-md-6"><div class="third__item_3 third__item_1Bg"><h1>Автомобиль защищен</br>
+                        от некомпетентных</br>
+                        сотрудников</h1><a href="#" class="third__mobile-btn">Подробнее</a><p>Сроки выполнения работ рассчитаны так, чтобы Вы получили готовый автомобиль максимально быстро и при этом качество работы не пострадало. <br> Все нормы отработаны на практике и показали отменные результаты.</p></div></div>
+                    <div style="position: relative;" class="third__slider-item col-lg-3 col-md-6"><div class="third__item_3 third__item_2Bg"><h1>Пожизненная гарантия</br>
+                        на работы центра</br>
+                        по установке</h1><a href="#" class="third__mobile-btn">Подробнее</a><p>Сроки выполнения работ рассчитаны так, чтобы Вы получили готовый автомобиль максимально быстро и при этом качество работы не пострадало.  <br> Все нормы отработаны на практике и показали отменные результаты.</p></div></div>
+                    <div style="position: relative;" class="third__slider-item col-lg-3 col-md-6"><div class="third__item_3 third__item_3Bg"><h1>Работаем надежно,</br>
+                        отвечаем за качество</br>
+                        не срываем сроки</h1><a href="#" class="third__mobile-btn">Подробнее</a><p>Сроки выполнения работ рассчитаны так, чтобы Вы получили готовый автомобиль максимально быстро и при этом качество работы не пострадало.  <br> Все нормы отработаны на практике и показали отменные результаты.</p></div></div>
+                    <div style="position: relative;" class="third__slider-item col-lg-3 col-md-6"><div class="third__item_3 third__item_4Bg"><h1>Качественный и</br>
+                        индивидуальный подход</br>
+                        к вашему автомобилю</h1><a href="#" class="third__mobile-btn">Подробнее</a><p>Сроки выполнения работ рассчитаны так, чтобы Вы получили готовый автомобиль максимально быстро и при этом качество работы не пострадало. <br>  Все нормы отработаны на практике и показали отменные результаты.</p></div></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination third__pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next third__next"></div>
+                <div class="swiper-button-prev third__prev"></div> 
             </div>
+            
         </div>
     </section>
 
