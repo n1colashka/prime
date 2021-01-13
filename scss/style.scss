@@ -1483,13 +1483,19 @@ form .form-control:focus{
 	line-height: 20px;
 }
 
+.fourth__mobile-title {
+	display: none;
+}
+
 .fourth__paragraph_2 {
     margin: 20px 0;
     font-size: 15px;
     line-height: 25px;
 }
 .fourth__paragraph_3 {
-    margin-bottom: 0;
+	margin-bottom: 0;
+	max-width: 330px;
+	font-size: 15px;
 }
 
 .fourth__content h1 {

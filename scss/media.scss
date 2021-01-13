@@ -369,7 +369,62 @@
 }
 
 @media screen and (max-width: 768px) {
-    
+    .fourth__paragraph_1,
+    .fourth__paragraph_2 {
+        display: none;
+    }
+    .fourth__paragraph_3 {
+        font-size: 15px;
+        line-height: 25px;
+        max-width: 100%;
+    }
+    .popup__input  {
+        margin-bottom: 30px;
+    }
+    .fourth {
+        &__picture img {
+            display: none;
+        }
+        &__content h1 {
+            position: relative;
+            font-size: 20px;
+            line-height: 25px;
+            padding-bottom: 70px;
+            margin-bottom: 25px;
+
+            &::after {
+                position: absolute;
+                content: "";
+                bottom: 20px;
+                left: 50%;
+                transform: translateX(-50%) rotate(90deg);
+                background: url('../img/line.png') center no-repeat;
+                width: 65px;
+                height: 1px;
+            }
+        }
+        &__title {
+            display: none;
+        }
+        &__mobile-title {
+            display: block;
+            width: 240px;
+        }
+        .forPos {
+            top: -5px;
+        }
+        .container {
+            width: 100%;
+            max-width: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        &__form {
+            padding: 30px 45px;
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+    }
 
     .sixth__pagination {
         bottom: 60px!important;
