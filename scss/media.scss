@@ -15,25 +15,9 @@
 }
 
 @media screen and (max-width: 1700px) {
-    .forBg2 {
-        height: 500px;
-    }
+  
 
-    .forMargin2 {
-        height: 500px;
-    }
 
-    .swiper__paragraph_6 {
-        display: none;
-    }
-
-    .swiper__paragraph_5 {
-        display: none;
-    }
-
-    .fifth__pagination {
-        bottom: 40px!important;
-    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -72,13 +56,8 @@
 
 
 @media screen and (max-width: 1400px) {
-    .fifth__prev {
-        right: 33%!important;
-        top: 90%!important;
-    }
-
-    .fifth__next {
-        top: 90%!important;
+    .fifth .fifth__pagination  {
+        padding-right: 108px;
     }
     .recover__box {
         width: auto;
@@ -93,23 +72,20 @@
 
 
 @media screen and (max-width: 1200px) {
+    .fifth .fifth__pagination  {
+        padding-right: 100px;
+    }
     .container {
         padding: 15px;
     }
 
-    .fifth__pagination {
-        padding-right: 100px;
-    }
+    
 
     .forBg {
         background-attachment:initial;
         background-size: cover;
     }
     
-    .forBg2 {
-        background-attachment: initial;
-        background-size: cover;
-    }
 
     .third__item_3:hover p {
         opacity: 1;
@@ -120,9 +96,8 @@
 }
 
 @media screen and (max-width: 999px) {
-    .fifth__pagination {
-        padding-right: 160px;
-    }
+    
+   
 
     .services__item {
         height: 280px;
@@ -130,6 +105,32 @@
 }
 
 @media screen and (max-width: 993px) {
+    .fifth .fifth__next {
+        right: 20px;
+    }
+    .fifth .fifth__prev {
+        right: 100px;
+    }
+    .forBg2 {
+        background-size: contain;
+    }
+    .swiper__inside h1 {
+        font-size: 15px;
+    }
+    .swiper__paragraph_6 {
+        font-size: 11px;
+        line-height: 16px;
+
+    }
+    .swiper__paragraph_4 {
+        font-size: 11px;
+        line-height: 16px;
+    }
+    .swiper__paragraph_2 {
+        font-size: 11px;
+        line-height: 16px;
+    }
+    
     .third .third__prev,
     .third .third__next {
         display: flex;
@@ -307,31 +308,15 @@
         height: 390px;
     }
 
-    .forBg2 {
-        height: 600px;
-    }
-
-    .forMargin2 {
-        height: 600px;
-    }
-
-    .swiper__paragraph_6 {
-        display: none;
-    }
-
-    .swiper__paragraph_5 {
-        display: none;
-    }
+  
 
     .swiper__inside {
         padding-top: 0;
-        height: 500px;
         width: 100%;
     }
 
-    .fifth__pagination {
-        padding-right: 80px!important;
-        bottom: 50px!important;
+    .fifth .fifth__pagination {
+        padding-right: 65px;
     }
 
     .mobile-contacts {
@@ -369,6 +354,56 @@
 }
 
 @media screen and (max-width: 768px) {
+    .forBg2 {
+        height: 300px;
+        border-radius: 10px 10px 0 0;
+        background-size: cover;
+    }
+    .forPos2 {
+        top: -12px;
+        align-items: flex-start;
+    }
+    .swiper__inside h1 {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .fifth .recover__btn {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .fifth .swiper-slide {
+        padding-bottom: 100px;
+        border-radius: 0 0 10px 10px;
+    }
+    
+    .fifth .fifth__pagination {
+        width: 60px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        padding: 0;
+        bottom: 40px;
+        justify-content: center;
+    }
+    .fifth .fifth__next {
+        right: calc(50% - 90px);
+        bottom: 30px;
+        left: auto;
+    }
+    .fifth .fifth__prev {
+        left: calc(50% - 90px);
+        bottom: 30px;
+        right: auto;
+    }
+    .recover__btn {
+        padding: 10px 40px;
+    }
+    .fifth .swiper__inside p {
+        display: none;
+    }
+    
     .fourth__paragraph_1,
     .fourth__paragraph_2 {
         display: none;
@@ -382,6 +417,7 @@
         margin-bottom: 30px;
     }
     .fourth {
+        padding: 40px 0;
         &__picture img {
             display: none;
         }
@@ -420,9 +456,9 @@
             padding-right: 15px;
         }
         &__form {
-            padding: 30px 45px;
-            margin-left: -15px;
-            margin-right: -15px;
+            padding: 30px 35px;
+            margin-left: -5px;
+            margin-right: -5px;
         }
     }
 
@@ -433,10 +469,20 @@
     .sixth__next {
         right: 38%!important;
     }
+    .forMargin3 {
+        margin-top: 15px;
+    }
+    
 }
 
 @media (max-width: 480px) {
     .services {
+        top: -7px;
+    }
+}
+
+@media (max-width: 380px) {
+    .forPos2 {
         top: -7px;
     }
 }

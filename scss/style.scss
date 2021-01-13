@@ -725,7 +725,7 @@ form .form-control:focus{
 }
 
 .swiper__inside {
-	padding: 20px;
+	padding: 0;
 	text-align: left;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
@@ -794,14 +794,19 @@ form .form-control:focus{
 	margin-top: 10px;
 }
 
-.fifth__pagination {
+.fifth .fifth__pagination {
 	display: flex;
 	justify-content: flex-end;
 	padding-right: 130px;
-    bottom: 80px!important;
-    width: 200px !important;
-    right: 0 !important;
-    left: auto !important;
+    bottom: 30px;
+    width: 200px ;
+    right: 0 ;
+    left: auto ;
+}
+.swiper__paragraph_3,
+.swiper__paragraph_5,
+.swiper__paragraph_1 {
+	text-transform: uppercase;
 }
 
 .swiper-pagination-total {
@@ -814,23 +819,27 @@ form .form-control:focus{
     z-index: 19;
 }
 
-.fifth__next {
-	top: 87%!important;
-	right: 10%!important;
-	color: #000!important;
+.fifth .fifth__next {
+	top: auto;
+	bottom: 20px;
+	right: 10%;
+	color: #000;
 	border: solid 1.5px#e9e9e9;
     padding: 20px;
-    border-radius: 100%;
+	border-radius: 100%;
+	background-color: #ffffff;
 }
 
-.fifth__prev {
-	top: 87%!important;
-	right: 30%!important;
-	left: auto!important;
+.fifth .fifth__prev {
+	top: auto;
+	bottom: 20px;
+	right: 30%;
+	left: auto;
 	border: solid 1.5px  #e9e9e9;
     padding: 20px;
 	border-radius: 100%;
-	color: #000!important;
+	color: #000;
+	background-color: #ffffff;
 }
 
 .swiper-button-disabled {
@@ -871,13 +880,6 @@ form .form-control:focus{
 
 }
 
-.forBg2 {
-	height: 700px;
-}
-
-.forMargin2 {
-	height: 700px;
-}
 
 
 
