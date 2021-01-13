@@ -103,6 +103,40 @@
 }
 
 @media screen and (max-width: 993px) {
+    .service-page .service-hero {
+        background-position:  center left 37%;;
+        padding-bottom: 0;
+    }
+    .hero {
+        padding-top: 30px;
+        padding-bottom: 60px;
+
+        &__subtitle {
+            font-size: 11px;
+            line-height: 20px;
+            margin-bottom: 10px;
+        }
+        &__title {
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+        &__text {
+            font-size: 15px;
+            line-height: 22px;
+        }
+        &__btn-mobile {
+            display: inline-block;
+            margin-bottom: 20px;
+            margin-top: 25px;
+            padding: 10px 22px;
+        }
+        &__btn-wrapper {
+            display: flex;
+        }
+        &__form {
+            display: none;
+        }
+    }
     .footer__bottom {
         flex-wrap: wrap;
         padding-bottom: 15px;

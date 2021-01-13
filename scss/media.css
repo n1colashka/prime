@@ -81,6 +81,41 @@
 }
 
 @media screen and (max-width: 993px) {
+  .service-page .service-hero {
+    background-position: center left 37%;
+    padding-bottom: 0;
+  }
+  .hero {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+  .hero__subtitle {
+    font-size: 11px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+  .hero__title {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .hero__text {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .hero__btn-mobile {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    padding: 10px 22px;
+  }
+  .hero__btn-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .hero__form {
+    display: none;
+  }
   .footer__bottom {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;

@@ -16,13 +16,15 @@ var btn4 = document.getElementById("popup-link4");
 var btn5 = document.getElementById("popup-link5");
 
 
-btn.onclick = function() {
-    modal.style.opacity = "1";
-    modal.style.visibility = "visible";
-    popupContent.style.opacity = "1";
-    popupContent.style.display = "block";
-    popupContent.style.transition = "all 0.8s ease 0s";
-    modal2.style.display = "none";
+if (btn) {
+    btn.onclick = function() {
+        modal.style.opacity = "1";
+        modal.style.visibility = "visible";
+        popupContent.style.opacity = "1";
+        popupContent.style.display = "block";
+        popupContent.style.transition = "all 0.8s ease 0s";
+        modal2.style.display = "none";
+    }
 }
 
 btnFooter.onclick = function(e) {
@@ -36,34 +38,42 @@ btnFooter.onclick = function(e) {
     modal2.style.display = "none";
 }
 
-btn2.onclick = function() {
-    modal.style.opacity = "1";
-    modal.style.visibility = "visible";
-    popupContent.style.display = "none";
-    modal2.style.display = "block";
+if (btn2) {
+    btn2.onclick = function() {
+        modal.style.opacity = "1";
+        modal.style.visibility = "visible";
+        popupContent.style.display = "none";
+        modal2.style.display = "block";
+    }
 }
 
-btn3.onclick = function() {
-    modal.style.opacity = "1";
-    modal.style.visibility = "visible";
-    popupContent.style.display = "none";
-    modal2.style.display = "block";
+if (btn3) {
+    btn3.onclick = function() {
+        modal.style.opacity = "1";
+        modal.style.visibility = "visible";
+        popupContent.style.display = "none";
+        modal2.style.display = "block";
+    }
+    
 }
 
-btn4.onclick = function() {
-    modal.style.opacity = "1";
-    modal.style.visibility = "visible";
-    popupContent.style.display = "none";
-    modal2.style.display = "block";
-}
-btn5.onclick = function() {
-    modal.style.opacity = "1";
-    modal.style.visibility = "visible";
-    popupContent.style.display = "none";
-    modal2.style.display = "block";
+if (btn4) {
+    btn4.onclick = function() {
+        modal.style.opacity = "1";
+        modal.style.visibility = "visible";
+        popupContent.style.display = "none";
+        modal2.style.display = "block";
+    }
 }
 
-
+if (btn5) {
+    btn5.onclick = function() {
+        modal.style.opacity = "1";
+        modal.style.visibility = "visible";
+        popupContent.style.display = "none";
+        modal2.style.display = "block";
+    }
+}
 
 window.onclick = function(event) {
     if (event.target == modal) {
