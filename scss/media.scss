@@ -296,10 +296,9 @@
         font-size: 15px;
     }
     .second {
-        padding-bottom: 0;
+        padding-bottom: 30px;
     }
     .services {
-        // height: 220px;
         top: -15px;
         .row {
             margin-left: 0;
@@ -455,6 +454,9 @@
 }
 
 @media screen and (max-width: 768px) {
+    .sixth {
+        background-color: #f5f5f7;
+    }
     .outer-menu .menu-mobile > div > div > ul > li {
         font-size: 18px;
     }
@@ -572,7 +574,7 @@
         background-size: cover;
     }
     .forPos2 {
-        top: -12px;
+        top: -9px;
         align-items: flex-start;
     }
     .swiper__inside h1 {
@@ -669,7 +671,7 @@
         }
         &__form {
             padding: 30px 35px;
-            margin-left: -5px;
+            margin-left: -6px;
             margin-right: -5px;
         }
     }

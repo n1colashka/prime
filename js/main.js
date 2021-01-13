@@ -13,6 +13,7 @@ var btnFooter = document.getElementById("popup__footer-link");
 var btn2 = document.getElementById("popup-link2");
 var btn3 = document.getElementById("popup-link3");
 var btn4 = document.getElementById("popup-link4");
+var btn4 = document.getElementById("popup-link5");
 
 
 btn.onclick = function() {
@@ -50,6 +51,12 @@ btn3.onclick = function() {
 }
 
 btn4.onclick = function() {
+    modal.style.opacity = "1";
+    modal.style.visibility = "visible";
+    popupContent.style.display = "none";
+    modal2.style.display = "block";
+}
+btn5.onclick = function() {
     modal.style.opacity = "1";
     modal.style.visibility = "visible";
     popupContent.style.display = "none";
