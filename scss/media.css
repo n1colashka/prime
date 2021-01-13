@@ -457,6 +457,9 @@
   .services {
     top: -7px;
   }
+  .recover h1 {
+    padding-right: 40px;
+  }
 }
 
 @media (max-width: 380px) {
