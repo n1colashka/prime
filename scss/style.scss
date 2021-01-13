@@ -309,6 +309,15 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	animation: pulse 2s infinite;
 }
 
+.menu-mobile__inner {
+	flex-direction: column;
+
+	.nav__btn {
+		color: #ffffff;
+		margin-top: 30px;
+	}
+}
+
 @keyframes pulse {
 	0% {
 		transform: scale(0.95);
@@ -336,7 +345,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	background-color: #040507e8;
 	opacity: 0;
 	visibility: hidden;
-	z-index: 30;
+	z-index: 35;
 	padding-top: 100px;
 	overflow-y: auto;
 	overflow-x: hidden;
@@ -854,6 +863,10 @@ form .form-control:focus{
 	position: relative;
 }
 
+.sixth__title-mobile {
+	display: none;
+}
+
 .sixth .special-justify {
     justify-content: flex-start;
     margin-top: 40px;
@@ -949,7 +962,7 @@ form .form-control:focus{
 	position: absolute;
 	display: flex;
 	justify-content: center;
-    bottom: 40px!important;
+    bottom: 40px;
     right: 30px;
     left: auto;
     width: 200px;
@@ -1014,6 +1027,7 @@ form .form-control:focus{
 	color: #d4d8e2;
 	line-height: 20px;
 	font-family: 'Montserrat', sans-serif;
+	max-width: 550px;
 }
 
 .seventh__undertitle {

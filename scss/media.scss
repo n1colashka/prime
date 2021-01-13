@@ -76,7 +76,7 @@
         padding-right: 100px;
     }
     .container {
-        padding: 15px;
+        padding: 0 15px;
     }
 
     
@@ -96,8 +96,6 @@
 }
 
 @media screen and (max-width: 999px) {
-    
-   
 
     .services__item {
         height: 280px;
@@ -105,6 +103,109 @@
 }
 
 @media screen and (max-width: 993px) {
+    .footer__bottom {
+        flex-wrap: wrap;
+        padding-bottom: 15px;
+    }
+    .footer__bottom p {
+        font-size: 11px;
+        margin-bottom: 10px;
+        line-height: 1.2;
+    }
+    .footer__bottom a {
+        font-size: 11px;
+        line-height: 1.2;
+    }
+    #menu2 {
+        position: relative;
+        padding: 20px 0;
+        align-items: center;
+        justify-content: space-between;
+
+        .outer-menu {
+            .checkbox-toggle:checked  {
+                top: 30px;
+                left: 30px;
+                position: fixed;
+
+                & ~ .hamburger {
+                    top: 30px;
+                    left: 30px;
+                    position: fixed;
+                }
+            }
+        }
+    }
+    .footer .menu__logo {
+        margin-left: 0;
+    } 
+    .nineth__wrapper h1 {
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+    .nineth__work p:first-child {
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+    .nineth__work {
+        margin-bottom: 25px;
+    }
+    .nineth__wrapper {
+        padding: 50px 15px;
+    }
+    .nineth__work p {
+        font-size: 18px;
+    }
+    .nineth__work p:last-child {
+        font-size: 13px;
+    }
+    .eighth__company p {
+        font-size: 14px;
+        margin-bottom: 5px;
+        margin-top: 0;
+    }
+    .eighth__company {
+        margin-top: 15px;
+    }
+    .eighth__title {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+    .eighth__p_3 {
+        display: none;
+    }
+    .eighth__btn {
+        margin-top: 15px;
+    }
+    .seventh {
+        padding-top: 42px;
+        padding-bottom: 32px;
+    }
+    .seventh .nav__btn {
+        margin-top: 0 !important;
+    }
+    .seventh__undertitle {
+        margin-top: 40px;
+    }
+    .seventh__title h1 {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    .seventh__title p {
+        font-size: 15px;
+        line-height: 25px;
+        color: #ffffff;
+    }
+    .sixth .special-justify {
+        margin-top: -25px;
+    }
+    .sixth .swiper-slide {
+        background-color: transparent;
+    }
+    .sixth .sixth__pagination {
+        height: 40px;
+        top: 47%;
+    }
     .fifth .fifth__next {
         right: 20px;
     }
@@ -251,13 +352,20 @@
     }
     .swiper__contain {
         flex-direction: column;
-        height: 500px;
-        padding-bottom: 100px;
+        height: auto;
+        padding-bottom: 5px;
+    }
+    .swiper__text {
+        border: none;
+        border-top: 1px solid #ededed;
+        padding-left: 0;
+        padding-top: 15px;
     }
 
     .swiper__info {
         text-align: center;
         margin-top: 20px;
+        margin-bottom: 20px;
     }
     .first {
         background-position: center;
@@ -295,18 +403,11 @@
         padding-top: 30%;
     }
 
-    .eighth__company {
-        margin-top: 20px;
-    }
-
     .popup__form {
         width: 80%;
         margin-left: 10%;
     }
 
-    .swiper__contain  {
-        height: 390px;
-    }
 
   
 
@@ -354,6 +455,117 @@
 }
 
 @media screen and (max-width: 768px) {
+    .outer-menu .menu-mobile > div > div > ul > li {
+        font-size: 18px;
+    }
+    .popup__form {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        .form__content {
+            flex-direction: column-reverse;
+            align-items: flex-start;
+            padding: 20px;
+        }
+        
+
+        .form__contact {
+            margin-top: 40px;
+            width: 100%;
+        }
+        .nav__btn {
+            margin-left: 0 !important;
+        }
+        .form__title h2 {
+            font-size: 24px;
+        }
+        .form__text-header h2 {
+            font-size: 16px;
+        }
+        .forMargin {
+            width: 100%;
+            margin-top: 0;
+        }
+
+        .form__text_div {
+            flex-direction: column;
+
+            & > div {
+                transform: rotate(90deg);
+                margin: 20px auto 30px auto !important;
+            }
+
+            & > * {
+                color: #ffffff;
+                opacity: 1 !important;
+            }
+        }
+    }
+
+    .nineth {
+        .nav__btn {
+            margin-top: 20px !important;
+        }
+    }
+    
+    .nineth__contacts {
+        width: 100%;
+        justify-content: flex-start;
+        padding: 0;
+    }
+    .map {
+        display: none;
+    }
+    .sixth {
+        padding-bottom: 30px;
+    }
+    .sixth .special-justify {
+        margin-top: -70px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .swiper__text_3 {
+        margin-bottom: 0;
+    }
+    .sixth .swiper-slide {
+        margin-bottom: 90px;
+    }
+    .sixth .sixth__next,
+    .sixth .sixth__prev {
+        bottom: 0;
+        top: auto;
+    }
+
+    .sixth .sixth__next {
+        right: calc(50% - 90px);
+        left: auto;
+    }
+    .sixth .sixth__prev {
+        left: calc(50% - 90px);
+        right: auto;
+    }
+
+    .sixth .sixth__pagination {
+        bottom: 0;
+        top: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        justify-content: center;
+    }
+
+    .swiper__contain {
+        margin-right: 0;
+        padding: 15px 10px;
+    }
+
+    .swiper__text {
+        margin-left: -10px;
+        margin-right: -10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
     .forBg2 {
         height: 300px;
         border-radius: 10px 10px 0 0;
@@ -451,7 +663,7 @@
         }
         .container {
             width: 100%;
-            max-width: 100%;
+            max-width: calc(100% - 2px);
             padding-left: 15px;
             padding-right: 15px;
         }
@@ -462,20 +674,50 @@
         }
     }
 
-    .sixth__pagination {
-        bottom: 60px!important;
-    }
-
-    .sixth__next {
-        right: 38%!important;
-    }
     .forMargin3 {
         margin-top: 15px;
     }
     
 }
 
+@media (max-width: 600px) {
+    .footer__bottom {
+        flex-direction: column;
+    }
+    .fifth .container {
+        padding: 0 25px;
+    }
+    .sixth .container {
+        padding: 0 5px;
+    }
+}
+@media (max-width: 575px) {
+    #menu2 {
+        margin-left: -15px;
+    margin-right: -15px;
+    padding: 20px 15px;
+        .outer-menu .checkbox-toggle {
+            left: 15px;
+        }
+        .outer-menu .hamburger {
+            left: 15px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .sixth__title-mobile {
+        display: block;
+        width: 200px;
+        margin-left: 9px;
+    }
+    .sixth__image {
+        display: none;
+    }
+}
+
 @media (max-width: 480px) {
+  
     .services {
         top: -7px;
     }
@@ -484,7 +726,19 @@
     }
 }
 
+@media (max-width: 400px) {
+    .seventh__undertitle {
+        flex-direction: column;
+    }
+    .seventh__adress {
+        margin-bottom: 30px;
+    }
+}
+
 @media (max-width: 380px) {
+    .eighth__title {
+        font-size: 17px;
+    }
     .forPos2 {
         top: -7px;
     }

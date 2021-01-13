@@ -65,11 +65,27 @@ window.onclick = function(event) {
     }
 }
 
-var burger = document.querySelector('.checkbox-toggle');
+var burger = document.querySelectorAll('.checkbox-toggle');
+var linksInMenu = document.querySelector('#menu .outer-menu');
+var linksInMenu2 = document.querySelector('#menu2 .outer-menu');
+linksInMenu.querySelectorAll('a').forEach(item => {
+    item.addEventListener('click', () => {
+        linksInMenu.querySelector('.checkbox-toggle').checked = false;
+        html.classList.remove('overflow-hidden');
+    })
+})
+linksInMenu2.querySelectorAll('a').forEach(item => {
+    item.addEventListener('click', () => {
+        linksInMenu2.querySelector('.checkbox-toggle').checked = false;
+        html.classList.remove('overflow-hidden');
+    })
+})
 var html = document.querySelector('html');
 
-burger.addEventListener('click', function() {
-    html.classList.toggle('overflow-hidden');
+burger.forEach(item => {
+    item.addEventListener('click', function() {
+        html.classList.toggle('overflow-hidden');
+    })
 })
 
 // Превращаем блоки в слайдеры на мобильных
