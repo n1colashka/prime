@@ -42,6 +42,9 @@
 }
 
 @media screen and (max-width: 1400px) {
+  .important__slider {
+    background: url("../img/important-car.png") center/300px no-repeat;
+  }
   .safe__content {
     padding-right: 0;
     padding-left: 80px;
@@ -61,6 +64,12 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .lead {
+    min-height: auto;
+  }
+  .lead .hero {
+    padding-bottom: 80px;
+  }
   .fifth .fifth__pagination {
     padding-right: 100px;
   }
@@ -85,6 +94,49 @@
 }
 
 @media screen and (max-width: 993px) {
+  .lead {
+    background-position: left center;
+  }
+  .lead .hero__title {
+    font-size: 25px;
+  }
+  .lead .hero__text {
+    font-size: 15px;
+    margin-bottom: 0;
+  }
+  .lead .hero {
+    padding: 40px 0;
+  }
+  .lead .hero__btn-mobile {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .lead .hero__btn {
+    padding-right: 0;
+  }
+  .important__phrase {
+    display: none;
+  }
+  .important__head {
+    margin-bottom: 25px;
+  }
+  .important__slider {
+    position: relative;
+    background-image: none;
+  }
+  .important__slider::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .1;
+    background: url("../img/important-car-mobile.png") center no-repeat;
+  }
+  .important__action {
+    bottom: 0;
+  }
   .safe {
     padding-top: 10px;
     padding-bottom: 45px;
@@ -519,6 +571,53 @@
 }
 
 @media screen and (max-width: 768px) {
+  .important {
+    padding: 40px 0;
+  }
+  .important__slider {
+    min-height: auto;
+  }
+  .important__slider-wrapper {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .important__item {
+    max-width: 100%;
+    text-align: left;
+    padding-bottom: 0;
+    margin-bottom: 65px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .important__item:nth-child(3) {
+    position: static;
+  }
+  .important__name {
+    text-align: left;
+  }
+  .important .important__prev,
+  .important .important__next {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .important .important__pagination {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .important__action {
+    display: none;
+  }
+  .fifth {
+    background-color: #fff;
+  }
+  .fifth .forPos2 {
+    top: -10px;
+  }
   .safe__img {
     text-align: left;
   }
@@ -752,6 +851,12 @@
 }
 
 @media (max-width: 600px) {
+  .important__title {
+    display: none;
+  }
+  .important__title-mob {
+    display: block;
+  }
   .footer__bottom {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -792,6 +897,10 @@
 }
 
 @media (max-width: 480px) {
+  .lead {
+    background-image: url("../img/lead-bg-mob.png");
+    background-position: center;
+  }
   .services {
     top: -7px;
   }
@@ -801,6 +910,9 @@
 }
 
 @media (max-width: 400px) {
+  .fifth .forPos2 {
+    top: -7px;
+  }
   .seventh__undertitle {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

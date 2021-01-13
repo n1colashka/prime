@@ -111,6 +111,10 @@ if (window.innerWidth <= 993) {
     initThirdSlider();
 }
 
+if (window.innerWidth <= 768) {
+    initImportantSlider();
+}
+
 
 preventDefaultLinks(); // Убрать если в Third будут рабочие ссылки, при клике на Подробнее
 
@@ -125,54 +129,89 @@ preventDefaultLinks(); // Убрать если в Third будут рабочи
 
 
 
+function initImportantSlider() {
+    var slider = document.querySelector('.important__slider');
+    
 
+    if (slider) {
+        var sliderWrapper = slider.querySelector('.important__slider-wrapper');
+        var sliderItems = slider.querySelectorAll('.important__item');  
+
+        slider.classList.add('swiper-container');
+        sliderWrapper.classList.add('swiper-wrapper');
+        sliderItems.forEach(item => {
+            item.classList.add('swiper-slide');
+        })
+
+        var swiper = new Swiper('.important__slider', {
+            pagination: {
+            el: '.swiper-pagination',
+            type: 'fraction',
+            },
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            },
+        });
+    }
+}
 
 function initServicesSlider() {
     var slider = document.querySelector('.services');
-    var sliderWrapper = slider.querySelector('.row');
-    var sliderItems = slider.querySelectorAll('.services__item');
+   
 
-    slider.classList.add('swiper-container');
-    sliderWrapper.classList.add('swiper-wrapper');
-    sliderWrapper.classList.remove('row');
-    sliderItems.forEach(item => {
-        item.classList.add('swiper-slide');
-    })
+    if (slider) {
+        var sliderWrapper = slider.querySelector('.row');
+        var sliderItems = slider.querySelectorAll('.services__item');
 
-    var swiper = new Swiper('.services', {
-        pagination: {
-          el: '.swiper-pagination',
-          type: 'fraction',
-        },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-      });
+        slider.classList.add('swiper-container');
+        sliderWrapper.classList.add('swiper-wrapper');
+        sliderWrapper.classList.remove('row');
+        sliderItems.forEach(item => {
+            item.classList.add('swiper-slide');
+        })
+    
+        var swiper = new Swiper('.services', {
+            pagination: {
+              el: '.swiper-pagination',
+              type: 'fraction',
+            },
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+          });
+    }
+
+   
 }
 
 function initThirdSlider() {
     var slider = document.querySelector('.third__container');
-    var sliderWrapper = slider.querySelector('.row');
-    var sliderItems = slider.querySelectorAll('.third__slider-item');
+    
 
-    slider.classList.add('swiper-container');
-    sliderWrapper.classList.add('swiper-wrapper');
-    sliderWrapper.classList.remove('row');
-    sliderItems.forEach(item => {
-        item.classList.add('swiper-slide');
-    })
+    if (slider) {
+        var sliderWrapper = slider.querySelector('.row');
+        var sliderItems = slider.querySelectorAll('.third__slider-item');
 
-    var swiper = new Swiper('.third__container', {
-        pagination: {
-          el: '.swiper-pagination',
-          type: 'fraction',
-        },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-      });
+        slider.classList.add('swiper-container');
+        sliderWrapper.classList.add('swiper-wrapper');
+        sliderWrapper.classList.remove('row');
+        sliderItems.forEach(item => {
+            item.classList.add('swiper-slide');
+        })
+
+        var swiper = new Swiper('.third__container', {
+            pagination: {
+            el: '.swiper-pagination',
+            type: 'fraction',
+            },
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            },
+        });
+    }
 }
 
 
