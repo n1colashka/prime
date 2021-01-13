@@ -56,6 +56,12 @@
 
 
 @media screen and (max-width: 1400px) {
+    .safe {
+        &__content {
+            padding-right: 0;
+            padding-left: 80px;
+        }
+    }
     .fifth .fifth__pagination  {
         padding-right: 108px;
     }
@@ -103,6 +109,49 @@
 }
 
 @media screen and (max-width: 993px) {
+    .safe {
+        padding-top: 10px;
+        padding-bottom: 45px;
+        &__inner {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        &__img {
+            margin-left: 0;
+            padding-left: 0;
+            text-align: center;
+        }
+        &__foot {
+            padding-bottom: 10px;
+            &::after {
+                content: none;
+            }
+        }
+        &__box-title {
+            font-size: 18px;
+        }
+        &__box {
+            padding: 20px 7px;
+            margin-top: -7px;
+            position: relative;
+        }
+        &__content {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        &__title {
+            display: none;
+        }
+        &__title-mob {
+            display: block;
+        }
+        &__table {
+            display: none;
+        }
+        &__mobile {
+            display: block;
+        }
+    }
     .service-page .service-hero {
         background-position:  center left 37%;;
         padding-bottom: 0;
@@ -488,6 +537,11 @@
 }
 
 @media screen and (max-width: 768px) {
+    .safe {
+        &__img {
+            text-align: left;
+        }
+    }
     .sixth {
         background-color: #f5f5f7;
     }

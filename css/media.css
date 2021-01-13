@@ -42,6 +42,10 @@
 }
 
 @media screen and (max-width: 1400px) {
+  .safe__content {
+    padding-right: 0;
+    padding-left: 80px;
+  }
   .fifth .fifth__pagination {
     padding-right: 108px;
   }
@@ -81,6 +85,49 @@
 }
 
 @media screen and (max-width: 993px) {
+  .safe {
+    padding-top: 10px;
+    padding-bottom: 45px;
+  }
+  .safe__inner {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .safe__img {
+    margin-left: 0;
+    padding-left: 0;
+    text-align: center;
+  }
+  .safe__foot {
+    padding-bottom: 10px;
+  }
+  .safe__foot::after {
+    content: none;
+  }
+  .safe__box-title {
+    font-size: 18px;
+  }
+  .safe__box {
+    padding: 20px 7px;
+    margin-top: -7px;
+    position: relative;
+  }
+  .safe__content {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .safe__title {
+    display: none;
+  }
+  .safe__title-mob {
+    display: block;
+  }
+  .safe__table {
+    display: none;
+  }
+  .safe__mobile {
+    display: block;
+  }
   .service-page .service-hero {
     background-position: center left 37%;
     padding-bottom: 0;
@@ -472,6 +519,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .safe__img {
+    text-align: left;
+  }
   .sixth {
     background-color: #f5f5f7;
   }
