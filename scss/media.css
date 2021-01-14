@@ -625,6 +625,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  body .swiper-pagination-total {
+    margin-left: 5px;
+    margin-top: 2px;
+  }
   .works {
     padding: 40px 0;
   }

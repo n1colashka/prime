@@ -14,10 +14,12 @@ var btn2 = document.getElementById("popup-link2");
 var btn3 = document.getElementById("popup-link3");
 var btn4 = document.getElementById("popup-link4");
 var btn5 = document.getElementById("popup-link5");
+var btn6 = document.getElementById("popup-link5");
 
 
 if (btn) {
-    btn.onclick = function() {
+    btn.onclick = function(e) {
+        e.preventDefault();
         modal.style.opacity = "1";
         modal.style.visibility = "visible";
         popupContent.style.opacity = "1";
@@ -40,7 +42,8 @@ btnFooter.onclick = function(e) {
 }
 
 if (btn2) {
-    btn2.onclick = function() {
+    btn2.onclick = function(e) {
+        e.preventDefault();
         modal.style.opacity = "1";
         modal.style.visibility = "visible";
         popupContent.style.display = "none";
@@ -50,18 +53,22 @@ if (btn2) {
 }
 
 if (btn3) {
-    btn3.onclick = function() {
+    btn3.onclick = function(e) {
+        e.preventDefault();
         modal.style.opacity = "1";
         modal.style.visibility = "visible";
         popupContent.style.display = "none";
         modal2.style.display = "block";
         html.classList.add('overflow-hidden');
+        console.log('click');
+
     }
     
 }
 
 if (btn4) {
-    btn4.onclick = function() {
+    btn4.onclick = function(e) {
+        e.preventDefault();
         modal.style.opacity = "1";
         modal.style.visibility = "visible";
         popupContent.style.display = "none";
@@ -71,7 +78,19 @@ if (btn4) {
 }
 
 if (btn5) {
-    btn5.onclick = function() {
+    btn5.onclick = function(e) {
+        e.preventDefault();
+        modal.style.opacity = "1";
+        modal.style.visibility = "visible";
+        popupContent.style.display = "none";
+        modal2.style.display = "block";
+        html.classList.add('overflow-hidden');
+    }
+}
+
+if (btn6) {
+    btn6.onclick = function(e) {
+        e.preventDefault();
         modal.style.opacity = "1";
         modal.style.visibility = "visible";
         popupContent.style.display = "none";
