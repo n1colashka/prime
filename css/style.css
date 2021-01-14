@@ -2815,10 +2815,16 @@ input::-webkit-inner-spin-button {
 }
 
 .works__slider-item .blob {
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  left: 0;
+  margin: 0 auto;
+  right: 0;
+  top: calc(50% - 25px);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.works__slider-item .blob .btn {
+  padding: 13px;
 }
 
 .works .works__pagination {

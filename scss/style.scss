@@ -2505,9 +2505,14 @@ input::-webkit-inner-spin-button {
 		}
 
 		.blob {
-			left: 50%;
-			top: 50%;
-			transform: translate(-50%, -50%);
+			left: 0;
+			margin: 0 auto;
+			right: 0;
+			top: calc(50% - 25px);
+			transform: translateY(-50%);
+			.btn {
+				padding: 13px;
+			}
 		}
 	}
 
