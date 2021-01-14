@@ -14,7 +14,8 @@ var btn2 = document.getElementById("popup-link2");
 var btn3 = document.getElementById("popup-link3");
 var btn4 = document.getElementById("popup-link4");
 var btn5 = document.getElementById("popup-link5");
-var btn6 = document.getElementById("popup-link5");
+var btn6 = document.getElementById("popup-link6");
+var btn7 = document.getElementById("popup-link7");
 
 
 if (btn) {
@@ -65,8 +66,19 @@ if (btn3) {
         popupFooter.style.display = "none";
         modal2.style.display = "block";
         html.classList.add('overflow-hidden');
-        console.log('click');
+    }
+    
+}
 
+if (btn7) {
+    btn7.onclick = function(e) {
+        e.preventDefault();
+        modal.style.opacity = "1";
+        modal.style.visibility = "visible";
+        popupContent.style.display = "none";
+        popupFooter.style.display = "none";
+        modal2.style.display = "block";
+        html.classList.add('overflow-hidden');
     }
     
 }
