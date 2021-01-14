@@ -42,6 +42,9 @@
 }
 
 @media screen and (max-width: 1400px) {
+  .reasons__items {
+    padding-right: 20px;
+  }
   .important__slider {
     background: url("../img/important-car.png") center/300px no-repeat;
   }
@@ -64,6 +67,26 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .problems__img {
+    width: 30%;
+  }
+  .problems__img img {
+    max-width: 85px;
+  }
+  .problems__info {
+    width: 70%;
+  }
+  .reasons__icons {
+    padding-left: 0;
+  }
+  .reasons__img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .reasons__num {
+    margin-left: auto;
+    margin-right: auto;
+  }
   .lead {
     min-height: auto;
   }
@@ -94,6 +117,27 @@
 }
 
 @media screen and (max-width: 993px) {
+  .problems__img {
+    width: 25%;
+  }
+  .problems__img img {
+    max-width: 55px;
+  }
+  .problems__info {
+    width: 75%;
+  }
+  .reasons__bg {
+    display: none;
+  }
+  .reasons__title {
+    margin-bottom: 22px;
+  }
+  .reasons__title-mob {
+    margin-bottom: 22px;
+  }
+  .reasons__items {
+    padding-right: 0;
+  }
   .lead {
     background-position: left center;
   }
@@ -571,6 +615,80 @@
 }
 
 @media screen and (max-width: 768px) {
+  .problems {
+    padding-top: 33px;
+  }
+  .problems .problems__pagination,
+  .problems .problems__next,
+  .problems .problems__prev {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .problems .problems__pagination {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .problems__item {
+    margin: 0;
+    width: 100%;
+    margin-bottom: 65px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    min-height: 300px;
+  }
+  .problems__img {
+    text-align: center;
+    width: 100%;
+  }
+  .problems__img img {
+    max-width: 200px;
+    max-height: 120px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .problems__info {
+    width: 100%;
+    margin-bottom: 20px;
+    padding-left: 0;
+  }
+  .problems__num {
+    font-size: 120px;
+    left: -46px;
+    bottom: -34px;
+  }
+  .reasons {
+    padding: 40px 0;
+  }
+  .reasons__info {
+    padding-right: 0;
+  }
+  .reasons__name {
+    margin-bottom: 10px;
+  }
+  .reasons__text {
+    line-height: 1.1;
+  }
+  .reasons__phrase {
+    padding-left: 60px;
+  }
+  .reasons__phrase::after {
+    height: 51px;
+    left: 27px;
+    top: -14px;
+  }
+  .reasons__item-inner {
+    padding: 25px 20px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    min-height: auto;
+  }
+  .reasons__item {
+    margin-bottom: 30px;
+  }
   .important {
     padding: 40px 0;
   }
@@ -851,6 +969,18 @@
 }
 
 @media (max-width: 600px) {
+  .problems__title-mob {
+    display: block;
+  }
+  .problems__title {
+    display: none;
+  }
+  .reasons__title-mob {
+    display: block;
+  }
+  .reasons__title {
+    display: none;
+  }
   .important__title {
     display: none;
   }

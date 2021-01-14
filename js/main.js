@@ -113,6 +113,7 @@ if (window.innerWidth <= 993) {
 
 if (window.innerWidth <= 768) {
     initImportantSlider();
+    initProblemsSlider();
 }
 
 
@@ -156,9 +157,35 @@ function initImportantSlider() {
     }
 }
 
+function initProblemsSlider() {
+    var slider = document.querySelector('.problems__slider');
+
+    if (slider) {
+        var sliderWrapper = slider.querySelector('.row');
+        var sliderItems = slider.querySelectorAll('.problems__item');
+
+        slider.classList.add('swiper-container');
+        sliderWrapper.classList.add('swiper-wrapper');
+        sliderWrapper.classList.remove('row');
+        sliderItems.forEach(item => {
+            item.classList.add('swiper-slide');
+        })
+    
+        var swiper = new Swiper('.problems__slider', {
+            pagination: {
+              el: '.swiper-pagination',
+              type: 'fraction',
+            },
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+          });
+    }
+}
+
 function initServicesSlider() {
     var slider = document.querySelector('.services');
-   
 
     if (slider) {
         var sliderWrapper = slider.querySelector('.row');

@@ -57,6 +57,9 @@
 
 
 @media screen and (max-width: 1400px) {
+    .reasons__items {
+        padding-right: 20px;
+    }
     .important__slider {
         background: url("../img/important-car.png") center / 300px no-repeat; 
     }
@@ -83,6 +86,28 @@
 
 
 @media screen and (max-width: 1200px) {
+    .problems {
+        &__img {
+            width: 30%;
+            img {
+                max-width: 85px;
+            }
+        }
+        &__info {
+            width: 70%;
+        }
+    }
+    .reasons__icons {
+        padding-left: 0;
+    }
+    .reasons__img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .reasons__num {
+        margin-left: auto;
+        margin-right: auto;
+    }
     .lead {
         min-height: auto;
         .hero {
@@ -120,6 +145,31 @@
 }
 
 @media screen and (max-width: 993px) {
+    .problems {
+        &__img {
+            width: 25%;
+            img {
+                max-width: 55px;
+            }
+        }
+        &__info {
+            width: 75%;
+        }
+    }
+    .reasons {
+        &__bg {
+            display: none;
+        }
+        &__title {
+            margin-bottom: 22px;
+        }
+        &__title-mob {
+            margin-bottom: 22px;
+        }
+        &__items {
+            padding-right: 0;
+        }
+    }
     .lead {
         background-position: left center;
         .hero__title {
@@ -593,6 +643,71 @@
 }
 
 @media screen and (max-width: 768px) {
+    .problems {
+        padding-top: 33px;
+        .problems__pagination,
+        .problems__next,
+        .problems__prev {
+            display: flex;
+        }
+        .problems__pagination {
+            justify-content: center;
+        }
+        &__item {
+            margin: 0;
+            width: 100%;
+            margin-bottom: 65px;
+            align-items: flex-start;
+            min-height: 300px;
+        }
+        &__img {
+            text-align: center;
+            width: 100%;
+            img {
+                max-width: 200px;
+                max-height: 120px;
+                object-fit: cover;
+            }
+        }
+        &__info {
+            width: 100%;
+            margin-bottom: 20px;
+            padding-left: 0;
+        }
+        &__num {
+            font-size: 120px;
+            left: -46px;
+            bottom: -34px;
+        }
+    }
+    .reasons {
+        padding: 40px 0;
+        &__info {
+            padding-right: 0;
+        }
+        &__name {
+            margin-bottom: 10px;
+        }
+        &__text {
+            line-height: 1.1;
+        }
+        &__phrase {
+            padding-left: 60px;
+            &::after {
+                height: 51px;
+                left: 27px;
+                top: -14px;
+            }
+        }
+        &__item-inner {
+            padding: 25px 20px;
+            align-items: flex-start;
+            min-height: auto;
+        }
+        &__item {
+            margin-bottom: 30px;
+        }
+    }
     .important {
         padding: 40px 0;
         &__slider {
@@ -868,7 +983,22 @@
 }
 
 @media (max-width: 600px) {
-    
+    .problems {
+        &__title-mob {
+            display: block;
+        }
+        &__title {
+            display: none;
+        }
+    }
+    .reasons {
+        &__title-mob {
+            display: block;
+        }
+        &__title {
+            display: none;
+        }
+    }
     .important {
         &__title {
             display: none;
