@@ -25,7 +25,9 @@ if (btn) {
         popupContent.style.opacity = "1";
         popupContent.style.display = "block";
         popupContent.style.transition = "all 0.8s ease 0s";
+        popupFooter.style.display = "none";
         modal2.style.display = "none";
+        html.classList.add('overflow-hidden');
     }
 }
 
@@ -34,6 +36,7 @@ btnFooter.onclick = function(e) {
     console.log('click');
     modal.style.opacity = "1";
     modal.style.visibility = "visible";
+    popupContent.style.display = "none";
     popupFooter.style.opacity = "1";
     popupFooter.style.display = "block";
     popupFooter.style.transition = "all 0.8s ease 0s";
