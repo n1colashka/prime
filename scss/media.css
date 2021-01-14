@@ -117,6 +117,13 @@
 }
 
 @media screen and (max-width: 993px) {
+  .works__slider::after {
+    background-size: 90%;
+    top: 15px;
+  }
+  .why__text-box {
+    max-height: 430px;
+  }
   .problems__img {
     width: 25%;
   }
@@ -615,6 +622,21 @@
 }
 
 @media screen and (max-width: 768px) {
+  .works {
+    padding: 40px 0;
+  }
+  .works__title {
+    margin-bottom: 10px;
+  }
+  .works__slider::after {
+    top: 25px;
+  }
+  .why__text {
+    margin-bottom: 20px;
+  }
+  .why__list li::before {
+    top: 5px;
+  }
   .problems {
     padding-top: 33px;
   }
@@ -1016,6 +1038,22 @@
 }
 
 @media (max-width: 500px) {
+  .works__slider::after {
+    background-image: url("../img/works-slider-bg-mob.png");
+    background-size: contain;
+  }
+  .works__title {
+    display: none;
+  }
+  .works__title-mob {
+    display: block;
+  }
+  .why__title {
+    display: none;
+  }
+  .why__title-mob {
+    display: block;
+  }
   .sixth__title-mobile {
     display: block;
     width: 200px;
@@ -1040,6 +1078,9 @@
 }
 
 @media (max-width: 400px) {
+  .why__text-box {
+    max-height: 540px;
+  }
   .fifth .forPos2 {
     top: -7px;
   }

@@ -105,6 +105,7 @@ burger.forEach(item => {
     })
 })
 
+
 // Превращаем блоки в слайдеры на мобильных
 if (window.innerWidth <= 993) {
     initServicesSlider();
@@ -116,6 +117,7 @@ if (window.innerWidth <= 768) {
     initProblemsSlider();
 }
 
+readMore();
 
 preventDefaultLinks(); // Убрать если в Third будут рабочие ссылки, при клике на Подробнее
 
@@ -127,7 +129,15 @@ preventDefaultLinks(); // Убрать если в Third будут рабочи
 
 
 
+function readMore() {
+    var readMoreBtn = document.querySelector('.why__btn');
+    var textBox = document.querySelector('.why__text-box');
 
+    readMoreBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        textBox.classList.add('open');
+    })
+}
 
 
 function initImportantSlider() {
