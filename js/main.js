@@ -36,6 +36,7 @@ btnFooter.onclick = function(e) {
     popupFooter.style.display = "block";
     popupFooter.style.transition = "all 0.8s ease 0s";
     modal2.style.display = "none";
+    html.classList.add('overflow-hidden');
 }
 
 if (btn2) {
@@ -44,6 +45,7 @@ if (btn2) {
         modal.style.visibility = "visible";
         popupContent.style.display = "none";
         modal2.style.display = "block";
+        html.classList.add('overflow-hidden');
     }
 }
 
@@ -53,6 +55,7 @@ if (btn3) {
         modal.style.visibility = "visible";
         popupContent.style.display = "none";
         modal2.style.display = "block";
+        html.classList.add('overflow-hidden');
     }
     
 }
@@ -63,6 +66,7 @@ if (btn4) {
         modal.style.visibility = "visible";
         popupContent.style.display = "none";
         modal2.style.display = "block";
+        html.classList.add('overflow-hidden');
     }
 }
 
@@ -72,13 +76,15 @@ if (btn5) {
         modal.style.visibility = "visible";
         popupContent.style.display = "none";
         modal2.style.display = "block";
+        html.classList.add('overflow-hidden');
     }
 }
 
 window.onclick = function(event) {
     if (event.target == modal) {
-    modal.style.opacity = "0";
-    modal.style.visibility = "hidden";
+        modal.style.opacity = "0";
+        modal.style.visibility = "hidden";
+        html.classList.remove('overflow-hidden');
     }
 }
 
@@ -131,12 +137,15 @@ preventDefaultLinks(); // Убрать если в Third будут рабочи
 
 function readMore() {
     var readMoreBtn = document.querySelector('.why__btn');
-    var textBox = document.querySelector('.why__text-box');
+    
+    if (readMoreBtn) {
+        var textBox = document.querySelector('.why__text-box');
 
-    readMoreBtn.addEventListener('click', function(e) {
-        e.preventDefault();
-        textBox.classList.add('open');
-    })
+        readMoreBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            textBox.classList.add('open');
+        })
+    }
 }
 
 

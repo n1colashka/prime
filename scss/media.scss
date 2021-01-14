@@ -73,7 +73,7 @@
         padding-right: 108px;
     }
     .recover__box {
-        width: auto;
+        width: 100%;
     }
 }
 
@@ -145,6 +145,9 @@
 }
 
 @media screen and (max-width: 993px) {
+    .eighth__company {
+        padding-right: 0;
+    }
     .works {
         &__slider {
             &::after {
@@ -776,7 +779,7 @@
         .forPos2 {
             top: -10px;
         }
-        background-color: #fff;
+        background-color: #f5f5f7;
     }
     .safe {
         &__img {
@@ -784,6 +787,7 @@
         }
     }
     .sixth {
+        padding-top: 0;
         background-color: #f5f5f7;
     }
     .outer-menu .menu-mobile > div > div > ul > li {
