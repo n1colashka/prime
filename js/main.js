@@ -50,6 +50,7 @@ if (btn2) {
         modal.style.opacity = "1";
         modal.style.visibility = "visible";
         popupContent.style.display = "none";
+        popupFooter.style.display = "none";
         modal2.style.display = "block";
         html.classList.add('overflow-hidden');
     }
@@ -61,6 +62,7 @@ if (btn3) {
         modal.style.opacity = "1";
         modal.style.visibility = "visible";
         popupContent.style.display = "none";
+        popupFooter.style.display = "none";
         modal2.style.display = "block";
         html.classList.add('overflow-hidden');
         console.log('click');
@@ -75,6 +77,7 @@ if (btn4) {
         modal.style.opacity = "1";
         modal.style.visibility = "visible";
         popupContent.style.display = "none";
+        popupFooter.style.display = "none";
         modal2.style.display = "block";
         html.classList.add('overflow-hidden');
     }
@@ -86,6 +89,7 @@ if (btn5) {
         modal.style.opacity = "1";
         modal.style.visibility = "visible";
         popupContent.style.display = "none";
+        popupFooter.style.display = "none";
         modal2.style.display = "block";
         html.classList.add('overflow-hidden');
     }
@@ -97,6 +101,7 @@ if (btn6) {
         modal.style.opacity = "1";
         modal.style.visibility = "visible";
         popupContent.style.display = "none";
+        popupFooter.style.display = "none";
         modal2.style.display = "block";
         html.classList.add('overflow-hidden');
     }
