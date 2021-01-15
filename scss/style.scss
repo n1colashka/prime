@@ -132,8 +132,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 		
 	}
 }
-
-.nav__btn-wrapper {
+#popup-link2 {
+	margin-bottom: 20px;
+}
+.nav__btn-wrapper, .popup, .important__contacts {
 	.nav__btn {
 		padding: 15px 30px;
 		border-radius: 5px;

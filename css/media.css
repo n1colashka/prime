@@ -664,7 +664,10 @@
     width: 20px;
     right: -16px;
   }
-  .nav__btn-wrapper .nav__btn {
+  .important__contacts .nav__btn {
+    padding: 10px 40px;
+  }
+  .nav__btn-wrapper .nav__btn, .popup .nav__btn {
     padding: 10px 40px;
   }
   .nav__btn a {
