@@ -53,6 +53,11 @@
 
 
 @media screen and (max-width: 1400px) {
+    .safe {
+        &__img img {
+            width: 100%;
+        }
+    }
     .sixth .sixth__pagination {
         right: 25px;
     }
@@ -79,9 +84,15 @@
         background: url("../img/important-car.png") center / 300px no-repeat; 
     }
     .safe {
+        &__img {
+            padding-right: 0;
+        }
+        &__img::after {
+            right: -31px;
+        }
         &__content {
             padding-right: 0;
-            padding-left: 80px;
+            padding-left: 40px;
         }
     }
     .fifth .fifth__pagination  {
@@ -160,6 +171,10 @@
 }
 
 @media screen and (max-width: 993px) {
+    .service-page__btn {
+        margin-top: 25px;
+        max-width: 93px;
+    }
     .fifth .swiper-slide {
         padding-left: 20px;
     }
@@ -259,6 +274,9 @@
             margin-left: 0;
             padding-left: 0;
             text-align: center;
+            width: auto;
+            display: inline-block;
+            margin: 0 auto;
         }
         &__foot {
             padding-bottom: 10px;
@@ -694,6 +712,10 @@
 }
 
 @media screen and (max-width: 768px) {
+    .safe__img::after {
+        width: 20px;
+        right: -16px;
+    }
     .nav__btn-wrapper {
         .nav__btn {
             padding: 10px 40px;
@@ -712,6 +734,7 @@
             margin-top: 2px;
         }
     }
+    
     .works {
         padding: 40px 0;
         &__title {
@@ -841,7 +864,7 @@
         }
     }
     .sixth {
-        padding-top: 0;
+        padding-top: 40px;
         background-color: #f5f5f7;
     }
     .outer-menu .menu-mobile > div > div > ul > li {
@@ -950,6 +973,7 @@
     .swiper__contain {
         margin-right: 0;
         padding: 15px 10px;
+        padding-right: 20px;
     }
 
     .swiper__text {
@@ -961,7 +985,7 @@
     
     .forBg2 {
         height: 300px;
-        border-radius: 10px 10px 0 0;
+        border-radius: 5px 5px 0 0;
         background-size: cover;
     }
     .forPos2 {
@@ -1126,6 +1150,10 @@
 }
 
 @media (max-width: 500px) {
+    .service-page .seventh {
+        background-image: url('../img/seventh-bg-2-mob.jpg');
+        background-repeat: no-repeat;
+    }
     .works {
         &__slider {
             &::after {
@@ -1151,7 +1179,7 @@
     .sixth__title-mobile {
         display: block;
         width: 200px;
-        margin-left: 9px;
+        margin-left: 13px;
     }
     .sixth__image {
         display: none;

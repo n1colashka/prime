@@ -37,8 +37,20 @@ html,body{
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
+	font-weight: 400;
+	text-rendering:optimizeLegibility;
 }
-input,button,textarea{font-family:inherit;}
+input,button,textarea{
+	font-family:inherit;
+	-webkit-appearance: none;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	-webkit-appearance: none;
+	appearance: none;
+ }
 
 input::-ms-clear{display: none;}
 button{cursor: pointer;}
@@ -175,13 +187,14 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	line-height: 12px;
 
 	a {
-		line-height: 12px;
-		font-size: 12px;
+		line-height: 14px;
+		font-size: 14px;
+		margin-bottom: 5px;
 	}
 
 	h6 {
 		line-height: 12px;
-		font-size: 10px;
+		font-size: 12px;
 		color: rgba(255, 255, 255, 0.5);
 		margin-left: 3px;
 	}
@@ -199,6 +212,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	display: inline-block;
 	color: #fff;
 	margin-bottom: 8px;
+	font-size: 14px;
 }
 
 .nav__btn a {
@@ -624,22 +638,26 @@ form .form-control:focus{
 	}
 }
 
+
+
+.third__title span {
+	color: #273be5;
+}
+
 .third__title  {
 	width: 100%;
 	max-width: 570px;
 	h1 {
 		font-size: 24px;
-		font-weight: 600;
+		font-weight: 500;
 		font-family: 'Montserrat', sans-serif;
+
+		span {
+			font-weight: 600;
+		}
 	}
 }
 
-
-
-.third__title span {
-	color: #273be5;
-	font-weight: 700;
-}
 
 
 .forPadding {
@@ -716,6 +734,7 @@ form .form-control:focus{
 	color: #fff;
 	padding: 40px;
 	max-width: 570px;
+	border-radius: 5px 0 0 5px;
 }
 
 .fourth__picture {
@@ -750,9 +769,10 @@ form .form-control:focus{
 	background: url("../img/bmw.png");
 	background-attachment: fixed;
 	background-position: right 90%;
-	background-size: 80%;
+	background-size: 100%;
 	background-repeat: no-repeat;
 	padding: 0;
+	border-radius: 0 5px 5px 0;
 }
 
 .forBg2 {
@@ -911,6 +931,8 @@ form .form-control:focus{
 .swiper__paragraph_1 {
 	text-transform: uppercase;
 	color: rgba(#000, .5);
+	font-weight: 600;
+	font-size: 14px;
 }
 
 .swiper-pagination-total {
@@ -1022,6 +1044,9 @@ form .form-control:focus{
 	position: absolute;
 	left: 0;
 	color: #1835a8;
+	background: radial-gradient(circle, rgba(24,53,168,1) 0%, rgba(9,9,121,1) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .swiper__info {
@@ -1647,13 +1672,27 @@ form .form-control:focus{
 	
 	.fourth .forBg {
 		background-position: right 35% bottom;
-		background-size: 80%;
+		background-size: 100%;
+		border-radius: 5px;
 	}
 	.seventh {
 		background-image: url('../img/seventh-bg-2.jpg');
 	}
 }
 
+.problems {
+	.problems__info {
+		text-align: left;
+	}
+}
+
+.fifth .second__image {
+	margin-left: -10px;
+}
+
+.fourth .fourth__image {
+	margin-left: -10px;
+}
 
 // Input number fix
 
@@ -1855,7 +1894,18 @@ input::-webkit-inner-spin-button {
 	}
 
 	&__img {
+		position: relative;
 		margin-left: -40px;
+
+		&::after {
+			position: absolute;
+			content: "";
+			right: -31px;
+			top: 30px;
+			height: 1px;
+			background-color: #dd2525;
+			width: 35px;
+		}
 		img {
 			width: 285px;
 		}
@@ -1940,7 +1990,7 @@ input::-webkit-inner-spin-button {
 		
 		th {
 			font-size: 15px;
-			font-weight: 500;
+			font-weight: 600;
 			text-align: center;
 		}
 
@@ -2290,7 +2340,7 @@ input::-webkit-inner-spin-button {
 	}
 
 	&__icons {
-		padding-left: 34px;
+		padding-left: 30px;
 	}
 
 	&__img {
@@ -2314,6 +2364,12 @@ input::-webkit-inner-spin-button {
 		border-radius: 50%;
 		font-style: italic;
 		font-weight: 600;
+		margin: 0 auto;
+	}
+
+	&__img--2 {
+		width: auto;
+		max-width: 40px;
 	}
 
 	&__info {
@@ -2329,6 +2385,7 @@ input::-webkit-inner-spin-button {
 
 	&__text {
 		font-size: 15px;
+		line-height: 16px;
 	}
 
 	
@@ -2694,3 +2751,30 @@ input::-webkit-inner-spin-button {
 	margin-bottom: 7px;
 }
 
+.service-hero {
+	.hero__info {
+		max-width: 100%;
+	}
+}
+
+.service-page {
+	&__btn {
+		display: inline-block;
+		position: relative;
+		font-weight: 500;
+		color: rgba(#232323, 0.7);
+		font-size: 15px;
+		padding-bottom: 8px;
+		max-width: 105px;
+
+		&::after {
+			position: absolute;
+			content: "";
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			height: 1px;
+			background-color: rgba(#232323, 0.7);;
+		}
+	}
+}
