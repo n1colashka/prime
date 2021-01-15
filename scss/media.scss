@@ -7,10 +7,6 @@
         margin-left: 60px;
     }
 
-    .first__carousel {
-        // width: 50%;
-    }
-
     
 }
 
@@ -698,6 +694,18 @@
 }
 
 @media screen and (max-width: 768px) {
+    .nav__btn-wrapper {
+        .nav__btn {
+            padding: 10px 40px;
+        }
+    }
+    .nav__btn a {
+        padding: 10px 40px;
+    }
+    .eighth__btn {
+        max-width: 100%;
+        text-align: left;
+    }
     body {
         .swiper-pagination-total {
             margin-left: 5px;
@@ -995,7 +1003,10 @@
         right: auto;
     }
     .recover__btn {
-        padding: 10px 40px;
+        a {
+            padding: 10px 40px;
+
+        }
     }
     .fifth .swiper__inside p {
         display: none;
