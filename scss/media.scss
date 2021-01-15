@@ -8,7 +8,7 @@
     }
 
     .first__carousel {
-        width: 50%;
+        // width: 50%;
     }
 
     
@@ -42,21 +42,40 @@
 
 
 @media screen and (max-width: 1470px) {
-    .first {
-        padding-bottom: 0;
-        height: 100vh;
-    }
+    // .first {
+    //     padding-bottom: 0;
+    //     height: 100vh;
+    // }
 }
 
 @media (max-width: 1399px) {
     .first {
         height: auto;
-        padding-bottom: 230px;
+        // padding-bottom: 230px;
     }
 }
 
 
 @media screen and (max-width: 1400px) {
+    .sixth .sixth__pagination {
+        right: 25px;
+    }
+
+    .swiper__contain {
+        padding: 20px;
+    }
+    
+    .sixth .sixth__next {
+        right: 60px;
+    }
+    
+    .sixth .sixth__prev {
+        right: 145px;
+    }
+    
+    .swiper__contain {
+        margin-right: 200px;
+    }
     .reasons__items {
         padding-right: 20px;
     }
@@ -145,6 +164,9 @@
 }
 
 @media screen and (max-width: 993px) {
+    .fifth .swiper-slide {
+        padding-left: 20px;
+    }
     .eighth__company {
         padding-right: 0;
     }
@@ -411,14 +433,17 @@
         top: 47%;
     }
     .fifth .fifth__next {
-        right: 20px;
+        right: 15px;
+    }
+    .fifth {
+        .swiper-pagination-total {
+            margin-top: 3px;
+        }
     }
     .fifth .fifth__prev {
-        right: 100px;
+        right: 105px;
     }
-    .forBg2 {
-        background-size: contain;
-    }
+
     .swiper__inside h1 {
         font-size: 15px;
     }
@@ -556,7 +581,6 @@
     .swiper__contain {
         flex-direction: column;
         height: auto;
-        padding-bottom: 5px;
     }
     .swiper__text {
         border: none;
@@ -612,7 +636,23 @@
     }
 
 
-  
+    .sixth .sixth__pagination {
+        right: 0;
+        width: 135px;
+    }
+
+    .swiper__contain {
+        margin-right: 150px;
+    }
+    
+    .sixth .sixth__next {
+        right: 0;
+    }
+    
+    .sixth .sixth__prev {
+        right: 95px;
+    }
+    
 
     .swiper__inside {
         padding-top: 0;
@@ -861,7 +901,7 @@
         padding-bottom: 30px;
     }
     .sixth .special-justify {
-        margin-top: -70px;
+        margin-top: -65px;
         margin-left: 0;
         margin-right: 0;
     }
@@ -887,12 +927,16 @@
     }
 
     .sixth .sixth__pagination {
-        bottom: 0;
+        bottom: -6px;
         top: auto;
         left: 50%;
         transform: translateX(-50%);
         width: 100px;
         justify-content: center;
+    }
+
+    .sixth .swiper-slide {
+        padding: 15px;
     }
 
     .swiper__contain {
