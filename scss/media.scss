@@ -4,7 +4,7 @@
     }
 
     .mediaMargin {
-        margin-left: 60px;
+        margin-left: 43px;
     }
 
     
@@ -53,6 +53,9 @@
 
 
 @media screen and (max-width: 1400px) {
+    .carousel__video {
+        left: 492px;
+    }
     .safe {
         &__img img {
             width: 100%;
@@ -96,7 +99,7 @@
         }
     }
     .fifth .fifth__pagination  {
-        padding-right: 108px;
+        padding-right: 113px;
     }
     .recover__box {
         width: 100%;
@@ -104,14 +107,21 @@
 }
 
 @media screen and (max-width: 1260px) {
-    
+    .first {
+        min-height: auto;
+    }
     .first__carousel {
         width: 100%;
+    }
+    .carousel__video {
+        left: auto;
+        right: 70px;
     }
 }
 
 
 @media screen and (max-width: 1200px) {
+    
     .problems {
         &__img {
             width: 30%;
@@ -171,6 +181,36 @@
 }
 
 @media screen and (max-width: 993px) {
+    .recover__video .blob {
+        width: 20px;
+        height: 20px;
+    }
+    .recover__video .blob .btn {
+        padding: 6px;
+    }
+    .menu__logo img{
+        width: 60px;
+    }
+    .first {
+        padding-top: 0;
+    }
+    .seventh {
+        background-attachment: scroll;
+    }
+    .services__content > a {
+        font-size: 18px;
+    }
+    .forBg {
+        background-image: none;
+        box-shadow: none;
+    }
+    .fourth__form {
+        margin: 0 auto;
+    }
+    .fifth .recover__btn a {
+        font-size: 15px;
+        padding: 13px 35px;
+    }
     .service-page__btn {
         margin-top: 25px;
         max-width: 93px;
@@ -625,6 +665,10 @@
     .recover__video {
         margin-top: 20px;
         display: flex;
+        align-items: flex-end;
+    }
+    .recover__video-title {
+        padding-bottom: 5px;
     }
     .first {
         padding-bottom: 70px;
@@ -712,6 +756,12 @@
 }
 
 @media screen and (max-width: 768px) {
+    .nav__contacts a {
+        font-size: 14px;
+    }
+    .nineth {
+        min-height: auto;
+    }
     .safe__img::after {
         width: 20px;
         right: -16px;
