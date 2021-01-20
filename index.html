@@ -30,7 +30,7 @@
                         </div>
                         <ul class="menu__items nav">
                             <li><a href="#">СТО</a></li>
-                            <div style="display: flex; align-items: center;"><li><a id="popup-link" href="#" >Услуги</a></li>
+                            <div id="popup-link"  style="display: flex; align-items: center;"><li><a href="#" >Услуги</a></li>
                                 <p>...</p></div>
                             <div style="display: flex; align-items: center;"><li><a href="#">Наши работы</a></li>
                                 <p>...</p></div>
@@ -143,13 +143,13 @@
                 <!-- Modal -->
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" style="max-width: 100%; height: 100vh; padding: 0!important;">
-                    <div class="modal-content" style="width: 100%; height: 90vh; background: linear-gradient(to right,  #141e30,  #243b55); border: none;">
+                    <div class="modal-content">
                         <div class="modal-header" style="border: none;">
                         
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="modal-body" style="height: 90vh;">
-                            <video width="100%" height="80%" controls>
+                        <div class="modal-body">
+                            <video width="100%" height="100%" controls>
                                 <source src="img/movie.mp4" type="video/mp4">
                               </video>
                         </div>
@@ -179,7 +179,7 @@
                         <li><a href="">Автомобильный свет</a></li>
                         <li><a href="">Парковочные системы</a></li>
                         <li><a href="">Мультимедия и акустиика</a></li>
-                        <li><a href="">Шумоизоляция авто</a></li>
+                        <li class="popup__nav-active"><a href="">Шумоизоляция авто</a></li>
                         <li><a href="">Услуги автомаляра</a></li>
                         <li><a href="">Оклейка пленкой авто</a></li>
                         <li><a href="">Отделка карбоном</a></li>
@@ -192,7 +192,7 @@
                         <li><a href="">Автомобильный свет</a></li>
                         <li><a href="">Парковочные системы</a></li>
                         <li><a href="">Мультимедия и акустиика</a></li>
-                        <li><a href="">Шумоизоляция авто</a></li>
+                        <li class="popup__nav-active"><a href="">Шумоизоляция авто</a></li>
                         <li><a href="">Услуги автомаляра</a></li>
                         <li><a href="">Оклейка пленкой авто</a></li>
                         <li><a href="">Отделка карбоном</a></li>
@@ -200,6 +200,7 @@
                 </div>
 
                 <div id="popup__form" class="popup__form">
+                    <button type="button" class="form-btn-close btn-close" data-bs-dismiss="popup" aria-label="Close"></button>
                     <div id="form__body" class="form__body">
                         <div style="text-align: center;" class="form__title"><h2>Обратная связь</h2></div>
                         <div class="form__content">
@@ -220,7 +221,7 @@
                                 <div class="form__text-header">
                                     <h2 style="text-align: center;">Заказать звонок</h2>
                                     <div class="form__text_div">
-                                        <div style="margin: 15px 10px 0 0;"><img style="height: 2px;" src="img/line.png" alt=""></div>
+                                        <div style="margin: 12px 10px 0 0;"><img style="height: 1px;" src="img/line.png" alt=""></div>
                                         <p style="opacity: 0.5;font-weight: 300; line-height: 25px; ">Закажите бесплатную консультацию.</br>
                                             Мы перезвоним Вам в ближайшее Время,</br>
                                             погрузимся в задачу и приступим к решению!</p>

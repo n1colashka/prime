@@ -707,6 +707,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  #exampleModal .modal-content {
+    height: auto;
+  }
   .nav__contacts a {
     font-size: 14px;
   }

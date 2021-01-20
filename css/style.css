@@ -45,6 +45,8 @@ html, body {
   -webkit-text-size-adjust: 100%;
   font-weight: 400;
   text-rendering: optimizeLegibility;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
 }
 
 input, button, textarea {
@@ -551,15 +553,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .popup__nav {
-  width: 250px;
+  width: 300px;
   background: url("../img/modal2-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   border-radius: 5px;
   padding: 10px;
-  -webkit-transition: all 0.8s ease 0s;
-  transition: all 0.8s ease 0s;
+  -webkit-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
   opacity: 0;
   margin-left: 25%;
 }
@@ -573,12 +575,12 @@ h1, h2, h3, h4, h5, h6 {
   color: #b9bdc9;
 }
 
-.popup__nav ul li a {
+.popup__nav ul a {
   color: #b9bdc9;
-  font-size: 16px;
+  font-size: 18px;
 }
 
-.popup__nav ul li a:hover {
+.popup__nav ul a:hover {
   color: #fff;
 }
 
@@ -589,8 +591,11 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
   background-position: center;
   padding: 30px 0;
-  width: 60%;
-  margin-left: 20%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 2%;
   border-radius: 10px;
 }
@@ -607,7 +612,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 form .form-control:focus {
-  border-color: #ced4da;
+  border-color: #fff;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -615,7 +620,7 @@ form .form-control:focus {
 .popup__input {
   background: transparent;
   border: none;
-  border-bottom: solid 1px #838895;
+  border-bottom: solid 1px #fff;
   padding: 13px 10px;
   color: #fff;
   width: 100%;
@@ -623,23 +628,23 @@ form .form-control:focus {
 }
 
 .popup__input::-webkit-input-placeholder {
-  color: rgba(241, 241, 241, 0.5);
-  font-weight: 300;
+  opacity: 1;
+  color: #fff;
 }
 
 .popup__input:-ms-input-placeholder {
-  color: rgba(241, 241, 241, 0.5);
-  font-weight: 300;
+  opacity: 1;
+  color: #fff;
 }
 
 .popup__input::-ms-input-placeholder {
-  color: rgba(241, 241, 241, 0.5);
-  font-weight: 300;
+  opacity: 1;
+  color: #fff;
 }
 
 .popup__input::placeholder {
-  color: rgba(241, 241, 241, 0.5);
-  font-weight: 300;
+  opacity: 1;
+  color: #fff;
 }
 
 .form__text_div {
@@ -656,17 +661,27 @@ form .form-control:focus {
 }
 
 .form__title h2 {
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 36px;
 }
 
 .form__text-header h2 {
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .form__contact h3 {
   font-size: 18px;
+  font-weight: 600;
+}
+
+.form__contact h5 {
+  font-size: 16px;
   font-weight: 500;
+}
+
+.form__contact h5 + p {
+  font-size: 13px;
 }
 
 .form__contact p {
@@ -783,7 +798,8 @@ form .form-control:focus {
 }
 
 .services__content {
-  max-width: 350px;
+  max-width: 328px;
+  width: 100%;
   position: relative;
   z-index: 3;
 }
@@ -3341,5 +3357,55 @@ input::-webkit-inner-spin-button {
   position: absolute;
   left: 545px;
   bottom: 0;
+}
+
+#exampleModal .modal-content {
+  max-width: 645px;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, right top, from(#141e30), to(#243b55));
+  background: linear-gradient(to right, #141e30, #243b55);
+  border: none;
+  margin: 0 auto;
+}
+
+.form-btn-close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+}
+
+.popup__form {
+  position: relative;
+}
+
+.menu__items div {
+  cursor: pointer;
+}
+
+.menu__items div a, .menu__items div p {
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.menu__items div:hover a, .menu__items div:hover p {
+  color: #fff;
+}
+
+.menu__items div:hover p {
+  letter-spacing: 3px;
+}
+
+.menu__items a {
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.menu__items li:hover a {
+  color: #fff;
+}
+
+.popup .popup__nav-active a {
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */

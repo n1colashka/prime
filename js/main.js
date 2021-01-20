@@ -16,6 +16,15 @@ var btn4 = document.getElementById("popup-link4");
 var btn5 = document.getElementById("popup-link5");
 var btn6 = document.getElementById("popup-link6");
 var btn7 = document.getElementById("popup-link7");
+var btnVideoClose = document.querySelector(".form-btn-close");
+
+if (btnVideoClose) {
+    btnVideoClose.addEventListener('click', function() {
+        modal.style.opacity = "0";
+        modal.style.visibility = "hidden";
+        html.classList.remove('overflow-hidden');
+    })
+}
 
 
 if (btn) {
@@ -25,7 +34,7 @@ if (btn) {
         modal.style.visibility = "visible";
         popupContent.style.opacity = "1";
         popupContent.style.display = "block";
-        popupContent.style.transition = "all 0.8s ease 0s";
+        popupContent.style.transition = "all 0.2s ease 0s";
         popupFooter.style.display = "none";
         modal2.style.display = "none";
         html.classList.add('overflow-hidden');
@@ -40,7 +49,7 @@ btnFooter.onclick = function(e) {
     popupContent.style.display = "none";
     popupFooter.style.opacity = "1";
     popupFooter.style.display = "block";
-    popupFooter.style.transition = "all 0.8s ease 0s";
+    popupFooter.style.transition = "all 0.2s ease 0s";
     modal2.style.display = "none";
     html.classList.add('overflow-hidden');
 }
