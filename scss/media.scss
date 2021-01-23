@@ -350,7 +350,7 @@
         }
     }
     .service-page .service-hero {
-        background-position:  center left 37%;;
+        background-position:  center left 23%;;
         padding-bottom: 0;
     }
     .hero {
@@ -756,6 +756,11 @@
 }
 
 @media screen and (max-width: 768px) {
+    .service-hero {
+        &::before {
+            width: 50%;
+        }
+    }
     
 #exampleModal {
 	.modal-content {

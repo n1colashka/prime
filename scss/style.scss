@@ -1857,8 +1857,21 @@ input::-webkit-inner-spin-button {
 
 
 .service-hero {
-	background: url('../img/service-main-bg.jpg') center / cover no-repeat;
-	padding-bottom: 40px;
+	background: url("../img/service-main-bg-2.jpg") right / cover no-repeat;
+	position: relative;
+	&::before {
+		position: absolute;
+		content: "";
+		left: 0;
+		top: 0;
+		width: 35%;
+		background-image: linear-gradient(-131deg, #26355e 0%, rgba(12, 20, 41, 1) 100%);
+		height: 100%;
+	}
+	.container {
+		position: relative;
+		z-index: 2;
+	}
 }
 .hero {
 	padding-top: 100px;
@@ -1895,7 +1908,7 @@ input::-webkit-inner-spin-button {
 	}
 
 	&__text {
-		margin-bottom: 10px;
+		margin-bottom: 15px;
 		color: #fffefe;
 		font-size: 18px;
 		line-height: 25px;
@@ -1971,11 +1984,13 @@ input::-webkit-inner-spin-button {
 		position: relative;
 		z-index: 3;
 		padding: 15px;
+		padding-top: 5px;
 	}
 
 	&__form-title {
 		color: #ffffff;
 		font-size: 25px;
+		font-weight: 600;
 		text-align: center;
 		margin-bottom: 30px;
 	}
@@ -1985,7 +2000,7 @@ input::-webkit-inner-spin-button {
 		font-size: 15px;
 		line-height: 25px;
 		color: rgba(#fff, .7);
-		margin-bottom: 12px;
+		margin-bottom: 18px;
 		padding-left: 80px;
 
 		&::after {
@@ -2000,7 +2015,7 @@ input::-webkit-inner-spin-button {
 	}
 
 	&__form-item {
-		margin-bottom: 30px;
+		margin-bottom: 35px;
 	}
 
 	&__form-btn-wrapper {
@@ -2022,6 +2037,9 @@ input::-webkit-inner-spin-button {
 		margin-right: 12px;
 		width: 24px;
 		height: 24px;
+		transform: none;
+		animation-name: 'pulse-2';
+		opacity: .7;
 		.btn {
 			padding: 7px;
 		}
@@ -2898,6 +2916,7 @@ input::-webkit-inner-spin-button {
 }
 
 .service-hero {
+	padding-bottom: 55px;
 	.hero__info {
 		max-width: 100%;
 	}
@@ -2952,12 +2971,18 @@ input::-webkit-inner-spin-button {
 	padding: 13px 35px;
 }
 
+.nav p {
+	margin-bottom: 7px;
+    font-size: 21px;
+}
+
 .nav__contacts h6 {
 	margin-bottom: 0;
 }
 
 .nav__contacts a {
 	margin-bottom: 4px;
+	font-size: 17.5px;
 }
 
 .nav__contacts {
