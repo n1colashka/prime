@@ -31,6 +31,9 @@
 }
 
 @media screen and (max-width: 1400px) {
+  .lead {
+    background-position: left 50% center;
+  }
   .carousel__video {
     left: 492px;
   }
@@ -140,6 +143,12 @@
 }
 
 @media screen and (max-width: 993px) {
+  .lead {
+    background-position: center;
+  }
+  .lead::before {
+    content: none;
+  }
   .recover__video .blob {
     width: 20px;
     height: 20px;
@@ -281,6 +290,9 @@
     padding: 20px 7px;
     margin-top: -7px;
     position: relative;
+  }
+  .safe__text {
+    padding-right: 0;
   }
   .safe__content {
     padding-left: 5px;
@@ -707,6 +719,13 @@
 }
 
 @media screen and (max-width: 768px) {
+  .works__slider-item .blob {
+    width: 35px;
+    height: 35px;
+  }
+  .works__slider-item .blob .btn {
+    padding: 12px;
+  }
   .service-hero::before {
     width: 50%;
   }
@@ -1195,6 +1214,7 @@
   .lead {
     background-image: url("../img/lead-bg-mob.png");
     background-position: center;
+    background-size: cover;
   }
   .services {
     top: -7px;

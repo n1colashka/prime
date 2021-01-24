@@ -13,6 +13,41 @@
     <title>Prime</title>
 </head>
 <body class="service-page">
+    
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" style="max-width: 100%; height: 100vh; padding: 0!important;">
+                    <div class="modal-content" style="width: 100%; height: 90vh; background: linear-gradient(to right,  #141e30,  #243b55); border: none;">
+                        <div class="modal-header" style="border: none;">
+                        
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" style="height: 90vh;">
+                            <video width="100%" height="80%" controls>
+                                <source src="img/movie.mp4" type="video/mp4">
+                              </video>
+                        </div>
+                        
+                    </div>
+                    </div>
+                </div>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" style="max-width: 100%; height: 100vh; padding: 0!important;">
+    <div class="modal-content">
+        <div class="modal-header" style="border: none;">
+        
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="modal__video">
+                <iframe loading="lazy" width="100%" height="100%" src="https://www.youtube.com/embed/pVE92TNDwUk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        
+    </div>
+    </div>
+</div>
     <section class="service-hero">
         <div class="container">
             <div class="row" style="position: relative; z-index: 31;">
@@ -119,24 +154,6 @@
                 </div>
             </div>
 
-
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" style="max-width: 100%; height: 100vh; padding: 0!important;">
-                    <div class="modal-content" style="width: 100%; height: 90vh; background: linear-gradient(to right,  #141e30,  #243b55); border: none;">
-                        <div class="modal-header" style="border: none;">
-                        
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body" style="height: 90vh;">
-                            <video width="100%" height="80%" controls>
-                                <source src="img/movie.mp4" type="video/mp4">
-                              </video>
-                        </div>
-                        
-                    </div>
-                    </div>
-                </div>
 
                 
             
@@ -662,7 +679,7 @@
                 </div>
                 <div class="col-lg-6 col-12 hero__form">
                     <div class="hero__form-inner">
-                        <div class="hero__form-title">Обезопасить автомобиль как раз, два!</div>
+                        <div class="hero__form-title">Обезопасить автомобиль <br> как раз,два!</div>
                     <div class="hero__form-text">Закажите бесплатную консультацию. Мы&nbsp;перезвоним Вам в ближайшее Время, погрузимся в задачу и приступим к решению!</div>
                     <form action="#">
                         <div class="hero__form-item">
@@ -984,24 +1001,39 @@
             </div>
             <div class="works__slider swiper-container">
                 <div class="works__slider-wrapper swiper-wrapper">
-                    <div class="works__slider-item swiper-slide" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <img src="img/works-1.jpg" alt="">
-                        <div class="blob"><img  class="btn " src="img/arrow.png" alt=""></div>
+                    <div class="works__slider-item swiper-slide">
+                        <div class="youtube" data-embed="NpEaa2P7qZI">
+                            <div class="works__slider-btn">
+                                <div class="blob"><img  class="btn" src="img/arrow.png" alt=""></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="works__slider-item swiper-slide" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <img src="img/works-1.jpg" alt="">
-                        <div class="blob"><img  class="btn " src="img/arrow.png" alt=""></div>
+                    <div class="works__slider-item swiper-slide">
+                        <div class="youtube" data-embed="NpEaa2P7qZI">
+                            <div class="works__slider-btn">
+                                <div class="blob"><img  class="btn" src="img/arrow.png" alt=""></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="works__slider-item swiper-slide" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <img src="img/works-1.jpg" alt="">
-                        <div class="blob"><img  class="btn " src="img/arrow.png" alt=""></div>
+                    <div class="works__slider-item swiper-slide">
+                        <div class="youtube" data-embed="NpEaa2P7qZI">
+                            <div class="works__slider-btn">
+                                <div class="blob"><img  class="btn" src="img/arrow.png" alt=""></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="works__slider-item swiper-slide" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <img src="img/works-1.jpg" alt="">
-                        <div class="blob"><img  class="btn " src="img/arrow.png" alt=""></div>
+                    <div class="works__slider-item swiper-slide">
+                        <div class="youtube" data-embed="NpEaa2P7qZI">
+                            <div class="works__slider-btn">
+                                <div class="blob"><img  class="btn" src="img/arrow.png" alt=""></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!-- Add Pagination -->
+                
+            </div>
+            <div class="works__nav">
+                    <!-- Add Pagination -->
                 <div class="swiper-pagination works__pagination"></div>
                 <!-- Add Arrows -->
                 <div class="swiper-button-next works__next"></div>
@@ -1117,6 +1149,16 @@
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
+      },
+    });
+    var swiper = new Swiper('.works__slider', {
+      pagination: {
+        el: '.works__pagination',
+        type: 'fraction',
+      },
+      navigation: {
+        nextEl: '.works__next',
+        prevEl: '.works__prev',
       },
     });
   </script>
