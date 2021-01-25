@@ -3481,11 +3481,17 @@ input::-webkit-inner-spin-button {
 
 .menu__items div {
   cursor: pointer;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
 }
 
 .menu__items div a, .menu__items div p {
   -webkit-transition: .2s ease;
   transition: .2s ease;
+}
+
+.menu__items div:hover {
+  margin-right: -7px;
 }
 
 .menu__items div:hover a, .menu__items div:hover p {
@@ -3495,6 +3501,7 @@ input::-webkit-inner-spin-button {
 .menu__items div:hover p {
   -webkit-transform: scale(1.1) translate(5px, -1px);
           transform: scale(1.1) translate(5px, -1px);
+  letter-spacing: 4.5px;
 }
 
 .menu__items a {

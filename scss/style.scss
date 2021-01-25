@@ -3102,12 +3102,15 @@ input::-webkit-inner-spin-button {
 
 .menu__items div {
 	cursor: pointer;
+	transition: .3s ease;
 
 	a, p {
 		transition: .2s ease;
 	}
 
 	&:hover {
+		margin-right: -7px;
+
 		a, p {
 			color: #fff;
 		}
@@ -3115,11 +3118,9 @@ input::-webkit-inner-spin-button {
 
 		p{ 
 			transform: scale(1.1) translate(5px, -1px);
+			letter-spacing: 4.5px;
 		}
 
-		p {
-			// letter-spacing: 3px;
-		}
 	}
 }
 
